@@ -77,6 +77,7 @@ const even = num.filter((element, index, num) => {
 })
 console.log(even);
 // Splice method
+// splice (start,delete,item1,item2.....)
 apple = ["yellow", "green", "red", "blue", "olive"];
 console.log(apple)
 apple = apple.splice(2);
@@ -85,17 +86,22 @@ console.log(apple)
 apple = apple.splice(1, 0, "Orange", "apple");
 console.log(apple)
 const cars = ["BMW", "AUDI", "VOLVO"];
-
- cars.splice(2, 0, "hh","royal rose");
+// here 2 means add these extra item from index 2 and start array to 0 inidex.
+cars.splice(2, 0, "hh", "royal rose");
 console.log(cars);
 // Create an Array
 const fruitst = ["Banana", "Orange", "Apple", "Mango"];
 
 // At position 2, add "Lemon" and "Kiwi"
 fruitst.splice(2, 0, "Lemon", "Kiwi");
-
-// Log the result to the console
 console.log(fruitst);
+
+// Add data in last in a array through splice method
+
+    fruitst.splice(fruitst.length ,0,"Nutcracker")
+     
+console.log(fruitst);
+// Log the result to the console
 // console.log(apple)
 // reduce method
 // const num1 = [1,2,3,4,5,6,7,8,9,10];
