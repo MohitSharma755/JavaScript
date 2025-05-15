@@ -28,7 +28,8 @@ const myfruit = fruit.forEach((element, index, fruit) => {
 )
 console.log(myfruit);
 // map function
-// Map method and foeach method are similar but map method return new array and forEach method does not return any new array.You can also check this exaample
+// Map method and foeach method are similar but map method return new array and forEach method does not return any new array.
+// You can also check this exaample
 fruit.map((element, index, fruit) => {
     console.log(`${element} This is index number ${index}`)
 })
@@ -42,18 +43,21 @@ const square = numbers.map((element, index, numbers) => {
     return element * element
 })
 console.log(square);
+
 // Push method
 // Push method is used to add new element in array
 const animals = ['dog', 'cat', 'cow', 'sheep'];
 console.log(animals);
 animals.push('lion', 'tiger', 'elephant');
 console.log(animals);
+
 // Pop method
 // Pop method is used to remove last element of array
 const animal = ['dog', 'cat', 'cow', 'sheep'];
 console.log(animal);
 animal.pop();
 console.log(animal);
+
 // Shift method
 // Shift method is used to remove first element of array
 const animal1 = ['dog', 'cat', 'cow', 'sheep'];
@@ -73,16 +77,30 @@ const even = num.filter((element, index, num) => {
 })
 console.log(even);
 // Splice method
-apple = ["yellow","green","red","blue","olive"];
+apple = ["yellow", "green", "red", "blue", "olive"];
 console.log(apple)
-apple = apple.splice(1);
+apple = apple.splice(2);
 console.log(apple)
-apple = apple.splice(1,0,"Orange","apple");
+
+apple = apple.splice(1, 0, "Orange", "apple");
 console.log(apple)
-console.log(apple)
+const cars = ["BMW", "AUDI", "VOLVO"];
+
+ cars.splice(2, 0, "hh","royal rose");
+console.log(cars);
+// Create an Array
+const fruitst = ["Banana", "Orange", "Apple", "Mango"];
+
+// At position 2, add "Lemon" and "Kiwi"
+fruitst.splice(2, 0, "Lemon", "Kiwi");
+
+// Log the result to the console
+console.log(fruitst);
+// console.log(apple)
 // reduce method
 // const num1 = [1,2,3,4,5,6,7,8,9,10];
 // const sum = num1.reduce((accumulator,currentvalue,index,num1)=>{
 //     return accumulator+currentvalue
 // })
 // console.log(sum);
+
