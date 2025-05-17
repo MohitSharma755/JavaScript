@@ -98,9 +98,49 @@ console.log(fruitst);
 
 // Add data in last in a array through splice method
 
-    fruitst.splice(fruitst.length ,0,"Nutcracker")
-     
+fruitst.splice(fruitst.length, 0, "Nutcracker")
+
 console.log(fruitst);
+
+// For search we have  - Index of, lastIndexof and include.
+const names = ["ajay", "rohan", "sohan", "mohan", "golu", "sonu", "monu"];
+// indexOf (searchelement);
+// indexOf (searchelement,indexOf);
+console.log(names.indexOf("rohan",2));
+// check double 
+const fruiti = ["mango","apple","kiwi","nutcracker","apple"];
+const result1 = fruiti.indexOf("apple");
+console.log(result1);
+const result2 = fruiti.lastIndexOf("apple");
+console.log(result2);
+const result3 = fruiti.includes("apple");
+console.log(result3);
+
+
+
+// 1.Add dece in an array 
+// 2. update march to March
+// 3. Delete feb
+const month = ["jan","march","april","feb"];
+console.log(month);
+month.splice(month.length,0,"december");
+
+console.log(month);
+console.log(month.indexOf("march"));
+// Update
+month.splice(1,1,"March");
+console.log(month);
+// delete 
+month.splice(3,1);
+console.log(month);
+// another method 
+
+
+
+
+
+
+
 // Log the result to the console
 // console.log(apple)
 // reduce method
@@ -109,4 +149,3 @@ console.log(fruitst);
 //     return accumulator+currentvalue
 // })
 // console.log(sum);
-
